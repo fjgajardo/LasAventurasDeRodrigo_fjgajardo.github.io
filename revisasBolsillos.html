@@ -13,14 +13,14 @@
 			    sessionStorage.clickcount = 1;
 			}
 
-	        if (sessionStorage.clickcount >= 3){
-	        	document.getElementById("result").innerHTML = 	"> Escuchas un ruido... ";
-	        }
 	        
 	    } else {
 	        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
 	    }
+	    
+
 	}
+
 	</script>
 	
 
@@ -62,5 +62,10 @@
 			<a href="index.html">> Volver al inicio</a>
 			<a href="hacesMemoria.html">> Retroceder</a>
 		</div>	
+	<script>
+		if (sessionStorage.clickcount >= 3){
+		        	document.getElementById("result").innerHTML = 	"> Escuchas un ruido... ";
+		        }	
+	</script>
 </body>
 </html>
