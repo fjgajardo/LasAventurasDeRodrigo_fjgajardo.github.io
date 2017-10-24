@@ -3,7 +3,27 @@
 <head>
 	<title>Las Aventuras de Rodrigo</title>
 	<link rel="stylesheet" href="style.css">
-	 <meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<script>
+		function clickCounter() {
+	    if(typeof(Storage) !== "undefined") {
+	        if (sessionStorage.clickcount) {
+	            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+	        } else {
+			    sessionStorage.clickcount = 1;
+			}
+
+	        if (sessionStorage.clickcount >= 3){
+	        	document.getElementById("result").innerHTML = 	"Escuchas un ruido... ";
+	        }
+	        
+	    } else {
+	        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+	    }
+	}
+	</script>
+	
+
 </head>
 <body>
 	<div class="cabezera">
@@ -19,19 +39,22 @@
 			<p><span>Buscas en tus bolsillos algo que te sirva, luego de revisar todo lo que podría guardar algo miras tus objetos, posees 4 boletas viejas, una pelusa, una moneda de 10 pesos, un destornillador y una carta de naipes.</span></p>
 		<div class="opciones">	
 			<div class="container">
-				<a href="observasLaCarta.html">> Observas la carta</a>
+				<a href="observasLaCarta.html" onclick="clickCounter()">> Observas la carta</a>
 			</div>
 			<div class="container">
-				<a href="observasMoneda.html">> Observas la moneda</a>	
+				<a href="observasMoneda.html" onclick="clickCounter()">> Observas la moneda</a>	
 			</div>
 			<div class="container">
-				<a href="deadEnd3.html">> Observas  las boletas </a>
+				<a href="deadEnd3.html" >> Observas  las boletas </a>
 			</div>
 			<div class="container">
 				<a href="deadEnd4.html">> Observas la pelusa</a>	
 			</div>
 			<div class="container">
-				<a href="observasDesto.html">> Observas el destornillador </a>
+				<a href="observasDesto.html" onclick="clickCounter()">> Observas el destornillador </a>
+			</div>
+			<div class="container">
+				<a href="escuchasRuido" id="result"></a>
 			</div>
 		</div>
 	</div>
