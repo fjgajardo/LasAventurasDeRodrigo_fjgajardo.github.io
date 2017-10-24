@@ -1,0 +1,112 @@
+@font-face { font-family: PressStart2P; src: url('fonts/PressStart2P-Regular.ttf'); } 
+
+body {
+	background-color: #333333 ;
+	text-align: center;
+	font-family: PressStart2P;
+	margin:0px;
+
+}
+
+a {
+	color:#86A59C;
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: #89CE94;
+
+}
+
+.tituloMain h1{
+	position: relative;
+	padding-top: 300px;
+	margin: 0px 60px 100px;
+	font-size: 75px;
+	color:#86A59C;
+	background-color: #333333;
+	
+}
+
+#bajadaMain {
+	color: #86A59C;
+}
+
+.botonEnter {
+	font-size: 20px;
+	margin: 0px 10px 60px 10px;
+
+}
+
+.texto {
+	font-size: 10px;
+	padding: 35px;
+
+}
+
+.cabezera h1 {
+	color: #bfc0c0;
+	font-size: 15px;
+	background-color: #424242 ;
+	margin: 0px 0px 15px;
+	padding: 15px 10px 10px 10px;
+
+}
+
+img {
+	margin: 10px;
+
+}
+
+.descripciones {
+	background-color: #424242;
+	padding: 10px 0px 20px;
+	margin: 10px 220px 20px;
+	color: #bfc0c0;
+
+}
+
+.descripciones p{
+	padding: 5px 20px;
+
+}
+
+.descripciones a{
+	color:#86A59C;
+
+}
+
+.descripciones .container{
+	margin: 20px;
+	padding: 0px;
+
+}
+
+.descripciones a:hover{
+	color: #89CE94;
+
+}
+
+.opcionesBajada {
+	position: relative;
+	bottom: 0%;
+	background-color: #424242;
+	padding: 10px;
+	font-size: 10px;
+
+}
+
+.opcionesBajada  a {
+	background-color: #424242;
+	padding: 10px;
+	font-size: 10px;
+	margin: 0px;
+
+}
+
+#fin {
+	font-size: 30px;
+	color: #89CE94;
+
+}
